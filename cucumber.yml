@@ -1,0 +1,5 @@
+default: --no-source --color --format pretty
+
+diario: -t @cadastro -t @editar -t @deletar
+
+regressao: -t @cadastro,@editar,@deletar -f html -o html_report.html
